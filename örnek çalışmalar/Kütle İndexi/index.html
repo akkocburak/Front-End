@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vutut Kütle İndexi</title>
+</head>
+
+<body>
+    <!-- vucut kütle endexsini hesaplayan program yapacaz
+    1-)kullanıcıdan kütle ve boy bilgisi al
+    2-)vücut ağırlığının boy uzunluğunun karesine bölünmesiyle (kg/m²) hesaplanır.
+    3-)bu çıkan sonuç:
+            18, 5 kg/m² ‘nin altındaki ise İdeal kilonun altında
+            18, 5 kg/m² ile 24, 9 kg/m² arasında ise İdeal kiloda
+            25 kg/m² ile 29, 9 kg/m² arasında ise İdeal kilonun üstünde
+            30 kg/m² ile 39, 9 kg/m² arasında ise İdeal kilonun çok üstünde (obez)
+            40 kg/m² üzerinde ise İdeal kilonun çok üstünde (morbid obez)
+    5-)kütle endexsini ve kişinin durumunu ekrana yazdır        
+  -->
+    <script>
+        let endex;
+   let kutle = Number( prompt("kütlenizi giriniz:"));
+   let boy = Number(prompt("boy uzunluğunu metre cinsinden yazınız:"));
+   endex=kutle/(boy**2);
+
+   if(endex<=18.5){
+    alert("kilonuz zayıf katogoride :"+endex)
+    
+   }
+else if(18.5<endex && endex<=24.9){
+    alert("kilonuz ideal :"+endex)
+}
+else if(24.9<endex && endex<=29.9){
+    alert("ideal kilonun üzerindesiniz :"+endex)
+    
+}
+else if(29.9<endex && endex<=39.9){
+    alert("kilonuz obez katogorisinde :"+endex)
+   
+}
+else{
+    alert("morbid obez katogorisindesiniz:"+endex)
+    
+}
+   
+    </script>
+</body>
+
+</html>

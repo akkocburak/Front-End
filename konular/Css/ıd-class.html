@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID ve Class</title>
+    <style>
+        /*belirli etiketlerin hepsine aynı özellik yapılırken kullan*/
+        p {
+
+            color: rgb(180, 20, 20);
+        }
+
+        /*coklu özellikler kullanırken class kullanılır*/
+        .moryazi {
+            color: rgb(118, 61, 122)
+        }
+
+        /*benzersiz özelliği olması gereken etikette kullanılır*/
+        #maviyazi {
+            color: blue;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h4 class="moryazi">Lorem ipsum dolor sit amet consectetur.</h4>
+    <h4 id="maviyazi">Lorem, ipsum dolor.</h4>
+    <h4 id="maviyazi">Lorem, ipsum dolor.</h4>
+    <!-- ID ilerde karışıklığı önlemek içim yalnızca bir etikette kullanılır yukardaki kullanım yanlış  bu gibi durumlarda class dan yararlanıır-->
+    <h4>Lorem, ipsum dolor.</h4>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+
+</body>
+
+</html>

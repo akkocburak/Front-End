@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akaryakıt istasyonu</title>
+</head>
+
+<body>
+    <!--    
+        ------------AKARYAKIT SATIŞ BİLGİ SİSTEMİ--------------
+        1-)arabanın plaka bilgileri
+        2-)arabanın yakıt tipinin belirlenmesi
+        3-)birim tipini seçtir
+        4-)miktarı iste
+        5-)konulan yakıt fiyatını ve yakıt miktarını plaka ile birlikte ver
+     -->
+    <script>
+        alert("HOŞGELDİNİZ");
+        let benzin95 = 21, benzin100 = 21.5, motorin = 19, lpg = 10;
+        const plaka = prompt("Aracın plaka bilgilerini giriniz");
+        let tip = Number(prompt("1-)BENZİN\n\r2-)MOTORİN\n\r3-)LPG \n\rlütfen yakıt tipini giriniz:"));
+        const birim = Number(prompt("1-)Litre  \n\r2-)TL  \n\rBirim giriniz"));
+
+        if (tip == 1 && birim == 1) {
+            let benzinTipi = prompt("1-)95 OKTAN\n\r2-)100 OKTAN\n\r lütfen benzin tipini seçiniz:");
+            if (benzinTipi == 1) {
+                let miktar = Number(prompt("Kaç litre 95 oktan benzin alacaksınız?"));
+                let tutar = benzin95 * miktar;
+
+                alert("PLAKA BİLGİSİ                                      : "+plaka+"\n\rGİRİLEN LİTRE MİKTARI                        : "+miktar+"\n\rVERİLEN YAKIT TUTARI                         : "+tutar+"\n\rBenzin (95OKTAN) BİRİM FİYATI           : "+benzin95);
+                 
+            }
+            else if (benzinTipi == 2) {
+                let miktar = Number(prompt("Kaç litre 100 oktan benzin alacaksınız?"));
+                let tutar = benzin100 * miktar;
+
+                alert("PLAKA BİLGİSİ                                      : "+plaka+"\n\rGİRİLEN LİTRE MİKTARI                        : "+miktar+"\n\rVERİLEN YAKIT TUTARI                         : "+tutar+"\n\rBenzin (100OKTAN) BİRİM FİYATI         : "+benzin100);
+            } else { alert("geçerliseçim yapınız.") }
+        }
+        else if (tip == 1 && birim == 2) {
+
+            let benzinTipi = prompt("1-)95 OKTAN\n\r2-)100 OKTAN\n\r lütfen benzin tipini seçiniz:");
+            if (benzinTipi == 1) {
+                let miktar = Number(prompt("Kaç TL 95 oktan benzin alacaksınız?"));
+                let litre = miktar / benzin95;
+
+                alert("PLAKA BİLGİSİ                                      : "+plaka+"\n\rGİRİLEN PARA MİKTARI                        : "+miktar+"\n\rVERİLEN YAKIT LİTRESİ                         : "+litre+"\n\rBenzin (95OKTAN) BİRİM FİYATI         : "+benzin95);
+            }
+            else if (benzinTipi == 2) {
+                let miktar = Number(prompt("Kaç TL 100 oktan benzin alacaksınız?"));
+                let litre = miktar / benzin100;
+
+                alert("PLAKA BİLGİSİ                                      : "+plaka+"\n\rGİRİLEN PARA MİKTARI                        : "+miktar+"\n\rVERİLEN YAKIT LİTRESİ                         : "+litre+"\n\rBenzin (100OKTAN) BİRİM FİYATI         : "+benzin100);
+            } else { alert("geçerliseçim yapınız.") }
+
+        }
+        else if (tip == 2 && birim == 1) {
+            let miktar = Number(prompt("Kaç Litre motorin alacaksınız?"));
+            let tutar=litre*motorin;
+
+            alert("PLAKA BİLGİSİ                                      : "+plaka+"\n\rGİRİLEN LİTRE MİKTARI                        : "+miktar+"\n\rVERİLEN YAKIT TUTARI                         : "+tutar+"\n\rMOTORİNİN BİRİM FİYATI                    : "+motorin);
+        }
+        else if (tip == 2 && birim == 2) {
+            let miktar = Number(prompt("Kaç TL motorin alacaksınız?"));
+            let litre=miktar/motorin;
+
+            alert("PLAKA BİLGİSİ                                      : "+plaka+"\n\rGİRİLEN PARA MİKTARI                        : "+miktar+"\n\rVERİLEN YAKIT LİTRESİ                         : "+litre+"\n\rMOTORİNİN BİRİM FİYATI                    : "+motorin);
+        }
+        else if (tip == 3 && birim == 1) {
+            let miktar = Number(prompt("Kaç Litre LPG alacaksınız?"));
+            let tutar=litre*lpg;
+
+            alert("PLAKA BİLGİSİ                                      : "+plaka+"\n\rGİRİLEN LİTRE MİKTARI                        : "+miktar+"\n\rVERİLEN YAKIT TUTARI                         : "+tutar+"\n\rLPG BİRİM FİYATI                          : "+lpg);
+        }
+        else if (tip == 3 && birim == 2) {
+            let miktar = Number(prompt("Kaç TL LPG alacaksınız?"));
+            let litre=miktar/lpg;
+
+            alert("PLAKA BİLGİSİ                                      : "+plaka+"\n\rGİRİLEN PARA MİKTARI                        : "+miktar+"\n\rVERİLEN YAKIT LİTRESİ                         : "+litre+"\n\rLPG BİRİM FİYATI                          : "+lpg);
+        }
+        else {
+            alert("lütfen geçekli seçimler yaoınız.")
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // alert("HOŞGELDİNİZ");
+        // let benzin95 = 21, benzin100 = 21.5, motorin = 19, lpg = 10;
+        // const plaka = prompt("Aracın plaka bilgilerini giriniz");
+        // let tip = Number(prompt("1-)BENZİN\n\r2-)MOTORİN\n\r3-)LPG \n\rlütfen yakıt tipini giriniz:"));
+        // const birim = Number(prompt("yakıt biriniz ne olsun\n\rlitre için 1 i \n\rtl için 2 yi \n\rTuşla"));
+        // let miktar = Number(prompt("miktarı giriniz:"));
+        // if (birim == 1) {
+        //     if (tip == 1) {
+        //         let benzinTipi =Number(prompt("1-)95 OKTAN\n\r2-)100 OKTAN \n\r Kaç oktan benzin almak istersiniz:"));
+        //         if (benzinTipi == 1) {
+        //            let tutar=benzin95*miktar;
+        //            alert("tutarınız:"+tutar);
+        //         }
+        //         else if (benzinTipi == 2) {
+        //             alert("100 oktan");
+        //         }
+        //         else {
+        //             alert("Geçerli seçim yapınız");
+        //         }
+        //     }
+        //     else if (tip == 2) {
+        //         alert(motorin)
+        //     }
+        //     else if (tip == 3) {
+        //         alert(lpg)
+        //     }
+        //     else {
+        //         alert("geçerli yakıt tipi giriniz")
+        //     }
+
+        // }
+        // else if (birim == 2) {
+
+        // } else { alert("Geçerli seçim yapınız") }
+
+
+
+
+    </script>
+</body>
+
+</html>

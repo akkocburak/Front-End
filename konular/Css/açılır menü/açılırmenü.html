@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açılır menü</title>
+    <!-- <link rel="stylesheet" href="açılırmenü.css">alttaki style özelliklerini harici bir css dosyası ekledim -->
+    <style>
+        ul {
+            list-style-type: none;/*liste başındaki yazıları siler*/
+            width: 100%;
+            height: 50px;
+            background-color: rgb(50, 46, 46);
+            margin-left: -40px;
+            margin-top: -10px;
+        }
+
+        li {
+            display: inline-block;
+            color: aliceblue;
+            padding-top: 13px;
+            padding-left: 10px;
+            margin-right: -3px;
+            height: 36px;
+            width: 50px;
+
+        }
+
+        li:hover {
+            background-color: rgb(255, 7, 7);
+        }
+
+        ol {
+            list-style-type: none;
+            background-color: rgb(50, 46, 46);
+            margin-top: 18px;
+
+
+        }
+
+        div li {
+            margin-left: -40px;
+        }
+
+        #divhome {
+            display: none;/*belirtilen divi görünmez yapar*/
+            position: absolute;/*belirtilen divi akıştan çıkartır ve yeni özellik eklemeye yarar*/
+            height: 150px;
+            width: 60px;
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+
+        .home:hover #divhome /*class ismi home olan IN üzerine geldiğinde id ismi divhome olanın özelliklerini etkiler */{
+            display: block;
+        }
+
+        #divabout {
+            display:none ;
+            position: absolute;
+            height: 150px;
+            width: 60px;
+            margin-left: -10px;
+            margin-top: -10px;
+
+        }
+ul li:nth-child(3):hover #divabout/* ul 3. çocuğu olan linin üzerine geldiğinde id ismi divabout olanın özelliklerini etkiler*/{
+    display: block;
+}
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="home">Home
+            <div id="divhome">
+                <ol>
+                    <li style="display: block;">Profile</li>
+                    <li style="display: block;">Setting</li>
+                </ol>
+            </div>
+        </li>
+        <li>News</li>
+        <li>About
+            <div id="divabout">
+                <ol>
+                    <li>Aaaaa</li>
+                    <li>Bbbbb</li>
+                    <li>Ccccc</li>
+                </ol>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

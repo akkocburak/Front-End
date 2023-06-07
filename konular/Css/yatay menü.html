@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatay Menü</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .div1 {
+
+            color: rgb(136, 131, 125);
+            width: 1180px;
+            height: 50px;
+            z-index: -1;
+            margin-top: -90px;
+            margin-left: 40px;
+        }
+
+        
+
+        div li {
+            list-style-type: none;
+            display: inline-block;
+            padding-left: 35px;
+            padding-top: 14px;
+        }
+
+        ol {
+            display: inline-block;
+
+        }
+
+        #divururn {
+            display: none;
+            position: absolute;
+            height: 500px;
+            width: 200px;
+            margin-left: -75px;
+
+
+        }
+
+        .urun:hover  #divururn {
+            display: block;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <img src="/konular/Css/fotolar/indir.png" alt="" width="90">
+    </div>
+    <div class="div1">
+        <ol>
+            <li class="urun">Ürünler
+                <div id="divururn">
+                    <ol>
+                        <li>Ana kart</li>
+                        <li>Ekran kartı</li>
+                        <li>Monitor</li>
+                        <li>Mouse</li>
+                        <li>Klavye</li>
+                    </ol>
+                </div>
+            </li>
+            <li>ODM Çözümleri</li>
+            <li>Destek</li>
+            <li>Duyurular</li>
+        </ol>
+
+
+
+
+    </div>
+</body>
+
+</html>

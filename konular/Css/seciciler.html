@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seciciler</title>
+    <style>
+        /* .class{} */
+        /* #ıd{} */
+        /* h1,p{} yazılı olan etiket isimlerine etki eder*/
+        /* div p{} divin içerisinde belirtilen etiketleri kapsar */
+        /* div>p{} annesi sadece div olan, belirtilen etiketleri kapsar */
+        /*div~p{} divden sonraki bütün paragrafı kapsar*/
+        /* div+p{} divden sonraki ilk paragrafı etkiler */
+        /* seçici:nth-child(x){}belirtilen secicinin x inci cocuğunu etkiler */
+        /* 
+         :last-childseciciden sonraki cocukların sonuncu olanı
+         :first-child seciciden sonraki ilk cocuk 
+         :only-child  tek cocuğu olan elemanı seçer*/
+        /* p{
+            color: brown;
+        } */
+        /* div>ul :nth-child(2) {
+            color: aqua;
+        } */
+       /* div div{
+        color: brown;
+        background-color: azure;
+       } */
+    </style>
+</head>
+
+<body>
+    <div style="background-color: chartreuse;display: inline-block;">
+        <p>paragraf1</p>
+        <p>paragraf2</p>
+        <p>paragraf3</p>
+        <ul>
+            <li>liste1</li>
+            <li>liste2</li>
+            <li>liste3</li>
+        </ul>
+        <div style="background-color: rgb(0, 217, 255);display: inline-block;">
+
+            <p>paragraf4</p>
+            <p>paragraf5</p>
+            <p>paragraf6</p>
+
+        </div>
+        <div>
+
+            <p>paragraf7</p>
+            <p>paragraf8</p>
+            <p>paragraf9</p>
+
+        </div>
+    </div>
+    <p>paragraf7</p>
+    <p>paragraf8</p>
+    <p>paragraf9</p>
+
+</body>
+
+</html>

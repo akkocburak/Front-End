@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabloyu css ile özelliştirme</title> 
+    <style>
+        table,th,td{
+            width: 50%;
+            border:2px solid black;  
+            border-collapse: collapse;/*çift çizgi oluçmasını önlemek için kullanılı*/
+        }
+        table th{
+            background-color: green;
+            color: aliceblue;
+        }
+        table tr:nth-child(odd)/*odd tek numaralı cocukları even çift numaralı cocukları seçer*/{
+           background-color: rgb(194, 190, 185);
+        }
+        table tr :hover{
+            color: rgb(255, 255, 255); 
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <table >
+        <tr>
+            <th>ders kodu</th>
+            <th>yıl</th>
+            <th>ders adı</th>
+            <th>vize notu</th>
+            <th>final notu</th>
+        </tr>
+        <tr>
+            <td>12345</td>
+            <td>2023</td>
+            <td>matematik2</td>
+            <td>56</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td>4534</td>
+            <td>2023</td>
+            <td>fizik</td>
+            <td>92</td>
+            <td>88</td></tr>
+        <tr>
+            <td>5434</td>
+            <td>2023</td>
+            <td>algoritma ve programlama</td>
+            <td>80</td>
+            <td>44</td></tr>
+        <tr>
+            <td>45344</td>
+            <td>2023</td>
+            <td>mantık devreleri</td>
+            <td>80</td>
+            <td>67</td></tr>
+    </table>
+</body>
+</html>

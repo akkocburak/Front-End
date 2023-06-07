@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        .kutu1 {
+            background-color: aqua;
+            /*istenildiğinde boyutlandırılabilir*/
+            display: inline-block;
+        }
+
+        .kutu2 {
+            background-color: aqua;
+            /*istenildiğinde boyutlandırılabilir*/
+            display: inline-block;
+
+        }
+        .kutu3 {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+           margin-top: 5px;
+            display: block;
+
+        }
+        .kutu4 {
+            background-color: aqua;
+            display: inline;
+
+        }
+        /*
+        display: inline; boyutu kadar yer kaplar width ve hight değeri girilemez
+        display: block; bulunduğu satırı komple kapsar width ve height değeri verilebilir
+        display: inline-block; inline gibi davranır ama width ve height değeri girilebilir
+        */
+    </style>
+
+</head>
+
+<body>
+    <div class="kutu1">dsfsdf</div>
+    <div class="kutu2" >dsfsdf</div>
+    <div class="kutu3" >bu div block olduğundan bütün satırı kapsar</div> <br>
+    <div class="kutu4"> inline olduğundan kapladığı alan boyutu kadar </div>
+   
+</body>
+
+</html>

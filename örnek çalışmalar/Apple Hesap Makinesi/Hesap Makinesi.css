@@ -1,0 +1,20 @@
+#div{
+background-color: black;
+width: 200px;
+height: 250px;
+margin-top: 90px;
+margin-left: 600px;
+color: aliceblue;
+padding-top:80px ;
+
+}
+.row div:nth-child(4){
+    
+    background-color: rgb(217, 143, 33);
+}
+.row div{
+    background-color: rgb(60, 59, 59);
+    border-radius: 100px;
+    text-align: center;
+}
+
