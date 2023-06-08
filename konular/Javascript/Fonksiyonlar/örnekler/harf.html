@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARF BULMA</title>
+</head>
+
+<body>
+    <!-- 
+     girilen bir metinde kaç aded girilen harf olduğunu bulma 
+    1)metin girmesini isticez
+    2)Harf girmesini isticez
+    3)girilen metindeki harf sayısını bulan fuction yazacaz 
+    4ekrana çıktıyı yazdıracaz
+    -->
+    <script>
+        // ------------- HARF SAYISI BULMA--------------
+
+        //     function harfbul() {
+        //         for (let i = 0; i <= metin.length; i++) {
+
+        //             if (metin.charAt(i) == harf) {
+
+        //                 toplam += 1;
+        //             }
+
+
+        //         }
+        //     }
+
+
+
+        // let metin = prompt("metin giriniz")
+
+        // let harf = prompt("harf giriniz:")
+        // let toplam = 0;
+        // harfbul();
+        // console.log(toplam)
+
+
+        //---------MÜKKEMEL SAYI BULMA ----------------
+        //bir sayının tam bölenleri toplamı kendisinin 2 katına eşitse bu sayılara mükkemelsaıy denir
+        //1)sayi isteyeceğiz
+        // 2)bu sayının kendinden küçük ve tam bölenleri for döngüsüile bulacaz bulduklarımımzı toplayazaz
+        // 3)cıkan sonuç sayının ikikatımı diye kontrol ettireceğiz eşitse bu mükkemel sayı diye cıktı verecez değilse mükkemel sayı değil diye cıktı vereceği
+         let toplam = 0
+         let sayi = prompt("sayigiriniz")
+         muk();
+         function muk(){
+            for (let i = (sayi-1); i > 0; i--) {
+             
+             if (sayi % i == 0) { 
+                 
+                 toplam = toplam + i;
+             }
+      
+         }
+         if(toplam==sayi){
+             console.log("girilen sayi mükkemeldir")
+         }
+         else{
+             console.log("girilen sayi mükkemel değildir")
+         }
+         }
+
+    </script>
+</body>
+
+</html>
