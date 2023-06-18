@@ -1,11 +1,13 @@
 #div{
+
 background-color: black;
 width: 200px;
 height: 250px;
 margin-top: 90px;
-margin-left: 600px;
+margin-left: 6000px;
 color: aliceblue;
 padding-top:80px ;
+
 
 }
 .row div:nth-child(4){
